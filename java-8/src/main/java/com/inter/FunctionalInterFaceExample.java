@@ -1,4 +1,4 @@
-package com.inter.in;
+package com.inter;
 
 public interface FunctionalInterFaceExample {
 
