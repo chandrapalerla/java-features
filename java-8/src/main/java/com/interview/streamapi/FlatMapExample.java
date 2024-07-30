@@ -1,7 +1,7 @@
 package com.interview.streamapi;
 
 import com.interview.bean.User;
-import com.interview.testdate.TestDataUtility;
+import com.utility.TestDataUtility;
 
 import java.util.List;
 import java.util.Map;
