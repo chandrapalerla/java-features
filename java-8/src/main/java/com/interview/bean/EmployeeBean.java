@@ -1,56 +1,57 @@
 package com.interview.bean;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.ToString;
-
-@Getter
-@ToString
-@AllArgsConstructor
 public class EmployeeBean {
-    private int empID;
-    private String empName;
-    private String dept;
-    private double salary;
-    private String emailId;
 
-    public int getEmpID() {
-        return empID;
-    }
+  private int empID;
+  private String empName;
+  private String dept;
+  private double salary;
+  private String emailId;
+  public EmployeeBean(int empID, String empName, String dept, double salary, String emailId) {
+    this.empID = empID;
+    this.empName = empName;
+    this.dept = dept;
+    this.salary = salary;
+    this.emailId = emailId;
+  }
 
-    public void setEmpID(int empID) {
-        this.empID = empID;
-    }
+  public int getEmpID() {
+    return empID;
+  }
 
-    public String getEmpName() {
-        return empName;
-    }
+  public void setEmpID(int empID) {
+    this.empID = empID;
+  }
 
-    public void setEmpName(String empName) {
-        this.empName = empName;
-    }
+  public String getEmpName() {
+    return empName;
+  }
 
-    public String getDept() {
-        return dept;
-    }
+  public void setEmpName(String empName) {
+    this.empName = empName;
+  }
 
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
+  public String getDept() {
+    return dept;
+  }
 
-    public double getSalary() {
-        return salary;
-    }
+  public void setDept(String dept) {
+    this.dept = dept;
+  }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
+  public double getSalary() {
+    return salary;
+  }
 
-    public String getEmailId() {
-        return emailId;
-    }
+  public void setSalary(double salary) {
+    this.salary = salary;
+  }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
-    }
+  public String getEmailId() {
+    return emailId;
+  }
+
+  public void setEmailId(String emailId) {
+    this.emailId = emailId;
+  }
 }

@@ -1,7 +1,6 @@
 package com.interview.streamapi;
 
-import com.testdate.TestDataUtility;
-
+import com.utility.TestDataUtility;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
@@ -17,7 +16,7 @@ public class ForEachDemo {
         };
 
         BiConsumer<Integer, String> integerStringBiConsumer =
-                (key, value) -> System.out.println("key::" + key + "value:::" + value);
+            (key, value) -> System.out.println("key::" + key + "value:::" + value);
 
         List<String> names = TestDataUtility.getNamesList();
 

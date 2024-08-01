@@ -1,8 +1,9 @@
 package com.interview.streamapi;
 
-import com.bean.EmployeeBean;
-import com.testdate.TestDataUtility;
 
+
+import com.interview.bean.EmployeeBean;
+import com.utility.TestDataUtility;
 import java.util.List;
 
 public class EmployeeFilterDemo {
