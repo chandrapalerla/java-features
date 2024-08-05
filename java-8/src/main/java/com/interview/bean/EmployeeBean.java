@@ -1,12 +1,13 @@
 package com.interview.bean;
 
-public class EmployeeBean {
+public class EmployeeBean implements Comparable {
 
   private int empID;
   private String empName;
   private String dept;
   private double salary;
   private String emailId;
+
   public EmployeeBean(int empID, String empName, String dept, double salary, String emailId) {
     this.empID = empID;
     this.empName = empName;
@@ -53,5 +54,21 @@ public class EmployeeBean {
 
   public void setEmailId(String emailId) {
     this.emailId = emailId;
+  }
+
+  @Override
+  public String toString() {
+    return "EmployeeBean{" +
+        "empID=" + empID +
+        ", empName='" + empName + '\'' +
+        ", dept='" + dept + '\'' +
+        ", salary=" + salary +
+        ", emailId='" + emailId + '\'' +
+        '}';
+  }
+
+  @Override
+  public int compareTo(Object o) {
+    return 0;
   }
 }

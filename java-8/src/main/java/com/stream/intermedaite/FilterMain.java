@@ -1,8 +1,9 @@
 package com.stream.intermedaite;
 
 import com.utility.TestDataUtility;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -20,10 +21,9 @@ public class FilterMain {
 
     Stream<Object> empty = Stream.empty();//1 -way creating stream
     Stream<String> names = Stream.of("chandu", "shekar", "hanc", "mickel");
+    names.peek(System.out::println);
 
-    Predicate<String> namePredicate = (name) -> {
-      return name.equalsIgnoreCase("shekar1");
-    };
+    Predicate<String> namePredicate = (name) -> name.equalsIgnoreCase("shekar1");
 
     names.filter(name -> name.length() > 4).forEach(System.out::println);
 
