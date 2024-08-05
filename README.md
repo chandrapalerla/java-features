@@ -1,6 +1,7 @@
 # java 8 Features
 1.Functional Interface(customized consumer, predicate)
  - @FunctionalInterface
+   
 2.default methods
 3.static methods
 4.Lambdas
