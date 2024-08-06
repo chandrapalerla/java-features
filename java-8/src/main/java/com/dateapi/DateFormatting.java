@@ -1,4 +1,4 @@
-package com.interview.dateapi;
+package com.dateapi;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

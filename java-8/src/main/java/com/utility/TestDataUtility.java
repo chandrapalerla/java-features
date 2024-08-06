@@ -3,8 +3,8 @@ package com.utility;
 
 import static java.util.stream.Collectors.toList;
 
-import com.interview.bean.EmployeeBean;
-import com.interview.bean.User;
+import com.bean.EmployeeBean;
+import com.bean.User;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

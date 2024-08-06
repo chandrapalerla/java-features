@@ -1,6 +1,6 @@
 package com.stream.intermedaite;
 
-import com.interview.bean.EmployeeBean;
+import com.bean.EmployeeBean;
 import com.utility.TestDataUtility;
 
 public class MapMain {

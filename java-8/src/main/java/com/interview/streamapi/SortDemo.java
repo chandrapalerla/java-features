@@ -1,6 +1,6 @@
 package com.interview.streamapi;
 
-import com.interview.bean.EmployeeBean;
+import com.bean.EmployeeBean;
 import com.utility.TestDataUtility;
 import java.util.Comparator;
 import java.util.List;

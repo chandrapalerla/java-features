@@ -1,4 +1,4 @@
-package com.interview.dateapi;
+package com.dateapi;
 
 import java.util.Base64;
 

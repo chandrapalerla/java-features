@@ -13,7 +13,8 @@
 
 7.Data and time
 
-8.completable feature
+8.completable feature(runAsync,supplyAsync,
+thenCombine,thenCompose,executor,all,anyOf,exceptionally)
 
 9.metaspace(how the developed, why thy introduced)
 

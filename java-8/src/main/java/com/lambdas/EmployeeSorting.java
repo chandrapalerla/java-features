@@ -1,6 +1,6 @@
-package com.interview.lambda;
+package com.lambdas;
 
-import com.interview.bean.EmployeeBean;
+import com.bean.EmployeeBean;
 
 import com.utility.TestDataUtility;
 import java.util.List;

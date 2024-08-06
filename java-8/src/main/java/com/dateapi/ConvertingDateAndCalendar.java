@@ -1,4 +1,4 @@
-package com.interview.dateapi;
+package com.dateapi;
 
 import java.time.LocalDate;
 import java.time.ZoneId;

@@ -1,4 +1,4 @@
-package com.interview.dateapi;
+package com.dateapi;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;

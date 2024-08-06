@@ -1,4 +1,4 @@
-package com.interview.lambda;
+package com.lambdas;
 
 import java.util.function.Predicate;
 

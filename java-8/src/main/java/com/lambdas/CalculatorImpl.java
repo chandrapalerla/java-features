@@ -1,4 +1,4 @@
-package com.interview.lambda;
+package com.lambdas;
 
 public class CalculatorImpl {
     public static void main(String[] args) {

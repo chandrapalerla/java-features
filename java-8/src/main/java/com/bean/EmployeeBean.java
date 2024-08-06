@@ -1,4 +1,4 @@
-package com.interview.bean;
+package com.bean;
 
 public class EmployeeBean implements Comparable {
 
