@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 public class HandlingExceptions {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        Integer age = -1;
+        int age = -1;
 
         CompletableFuture<String> maturityFuture = CompletableFuture.supplyAsync(() -> {
             if (age < 0) {

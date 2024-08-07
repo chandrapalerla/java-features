@@ -3,13 +3,13 @@ package com.interview.streamapi;
 
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.Arrays;
 import java.util.List;
 
 public class ReduceExample {
     public static void main(String[] args) {
-        List<EmployeeBean> employeeData = TestDataUtility.getEmployeeData();
+        List<EmployeeBean> employeeData = TestData.getEmployeeData();
         double salarySum = employeeData.stream()
                 .filter(employeeBean -> employeeBean.getDept().equalsIgnoreCase("it"))
                 .map(EmployeeBean::getSalary)
@@ -40,7 +40,7 @@ public class ReduceExample {
                 });
         System.out.println(str);
 
-        Long it = TestDataUtility.getEmployeeData()
+        Long it = TestData.getEmployeeData()
                 .stream()
                 .filter(employeeBean -> employeeBean.getDept().equalsIgnoreCase("it"))
                 .map(EmployeeBean::getEmpName)

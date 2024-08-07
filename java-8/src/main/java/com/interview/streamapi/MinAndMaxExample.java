@@ -2,7 +2,7 @@ package com.interview.streamapi;
 
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.Comparator;
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class MinAndMaxExample {
 
         //FInd max salary from employee list
 
-        List<EmployeeBean> employeeBeanList = TestDataUtility.getEmployeeData();
+        List<EmployeeBean> employeeBeanList = TestData.getEmployeeData();
 
         String maxSalaryEmpName = employeeBeanList.stream()
                 .max(Comparator.comparing(EmployeeBean::getSalary))

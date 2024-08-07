@@ -1,7 +1,7 @@
 package com.stream.intermedaite;
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -22,17 +22,17 @@ public class SortedMain {
       return 0;
     };
 
-    List<EmployeeBean> employees = TestDataUtility.getEmployeeData();
+    List<EmployeeBean> employees = TestData.getEmployeeData();
     employees.stream()
         .sorted(employeeBeanComparator)
         .forEach(System.out::println);
 
-    List<EmployeeBean> employees1 = TestDataUtility.getEmployeeData();
+    List<EmployeeBean> employees1 = TestData.getEmployeeData();
     employees1.stream()
         .sorted(Comparator.comparing(EmployeeBean::getSalary).thenComparing(employeeBeanComparator))
         .collect(Collectors.toList());
 
-    Map<EmployeeBean, Integer> employeeMapData = TestDataUtility.getEmployeeMapData();
+    Map<EmployeeBean, Integer> employeeMapData = TestData.getEmployeeMapData();
 
     System.out.println(" ::::::: Sort with map ::::::::::");
     employeeMapData.entrySet()

@@ -1,12 +1,12 @@
 package com.stream.intermedaite;
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 
 public class PeekMain {
 
   public static void main(String[] args) {
-    TestDataUtility.getEmployeeData()
+    TestData.getEmployeeData()
         .stream()
         .filter(emp -> emp.getDept().equalsIgnoreCase("it"))
         .peek(System.out::println)

@@ -1,7 +1,7 @@
 package com.interview.streamapi;
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
 public class SortDemo {
     public static void main(String[] args) {
 
-        List<Integer> numberList = TestDataUtility.getNumberList();
+        List<Integer> numberList = TestData.getNumberList();
         //Accending Order
         numberList.stream()
                 .sorted().forEach(System.out::println);
@@ -19,7 +19,7 @@ public class SortDemo {
                 .forEach(System.out::println);
 
         Comparator<EmployeeBean> employeeBeanComparator = (o1, o2) -> (int) (o2.getSalary() - o1.getSalary());
-        List<EmployeeBean> employeeData = TestDataUtility.getEmployeeData();
+        List<EmployeeBean> employeeData = TestData.getEmployeeData();
 
         employeeData.stream()
                 .sorted(employeeBeanComparator)
@@ -29,10 +29,10 @@ public class SortDemo {
                 .sorted(Comparator.comparing(EmployeeBean::getSalary).reversed())
                 .forEach(System.out::println);
 
-        Map<Integer, String> namesMap = TestDataUtility.getNamesMap();
+        Map<Integer, String> namesMap = TestData.getNamesMap();
         namesMap.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 
-        Map<EmployeeBean, Integer> employeeMapData = TestDataUtility.getEmployeeMapData();
+        Map<EmployeeBean, Integer> employeeMapData = TestData.getEmployeeMapData();
         employeeMapData.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByKey(Comparator.comparing(EmployeeBean::getEmpID)))

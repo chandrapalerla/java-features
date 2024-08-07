@@ -2,13 +2,13 @@ package com.interview.streamapi;
 
 import com.bean.User;
 
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class MapExample {
     public static void main(String[] args) {
-        List<User> userData = TestDataUtility.getUserData();
+        List<User> userData = TestData.getUserData();
         List<String> userNames = userData.stream()
             .map(User::getUserName)
             .collect(Collectors.toList());

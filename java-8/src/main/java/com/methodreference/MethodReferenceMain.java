@@ -1,13 +1,13 @@
 package com.methodreference;
 
 import com.bean.EmployeeBean;
-import com.utility.TestDataUtility;
+import com.utility.TestData;
 import java.util.List;
 
 public class MethodReferenceMain {
 
   public static void main(String[] args) {
-    List<EmployeeBean> employeeData = TestDataUtility.getEmployeeData();
+    List<EmployeeBean> employeeData = TestData.getEmployeeData();
 
     System.out.println(" before java:::8 ");
     for (EmployeeBean employeeBean : employeeData) {
@@ -19,7 +19,7 @@ public class MethodReferenceMain {
       System.out.println(employeeBean.getEmpName());
     });
     System.out.println("Method reference");
-    List<String> namesList = TestDataUtility.getNamesList();
+    List<String> namesList = TestData.getNamesList();
     namesList.forEach(System.out::println);
 
     employeeData.stream().map(EmployeeBean::getEmpName).forEach(System.out::println);

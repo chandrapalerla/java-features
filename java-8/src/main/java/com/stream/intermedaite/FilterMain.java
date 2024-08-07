@@ -1,9 +1,7 @@
 package com.stream.intermedaite;
 
-import com.utility.TestDataUtility;
-import java.util.HashMap;
+import com.utility.TestData;
 import java.util.List;
-import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -11,7 +9,7 @@ public class FilterMain {
 
   public static void main(String[] args) {
 
-    List<String> namesList = TestDataUtility.getNamesList();
+    List<String> namesList = TestData.getNamesList();
 
     for (String name : namesList) {
       if (name.equalsIgnoreCase("pavel")) {
