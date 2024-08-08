@@ -9,7 +9,7 @@ public class ZonedDateTimeTest {
 //            System.out.println(zoneId);
 //        }
 
-        ZonedDateTime zonedDateTime = ZonedDateTime.now(ZoneId.of("US/Pacific"));
+        ZonedDateTime zonedDateTime = ZonedDateTime.now(ZoneId.of("US/Central"));
         System.out.println(zonedDateTime);
 
         ZonedDateTime zonedDateTime1 = ZonedDateTime.now();

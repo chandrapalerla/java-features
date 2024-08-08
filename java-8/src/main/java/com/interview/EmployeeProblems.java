@@ -1,26 +1,8 @@
 package com.interview;
 
-import static java.util.stream.Collectors.maxBy;
-
-import com.bean.EmployeeBean;
-import com.utility.TestData;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
 public class EmployeeProblems {
 
   public static void main(String[] args) {
-    //Problem 5: Employee with the Highest Salary in Each Department
-    Map<String, Optional<EmployeeBean>> highestSalaryByDept = TestData.getEmployeeData().stream()
-        .collect(Collectors.groupingBy(
-            EmployeeBean::getDept,
-            Collectors.maxBy(Comparator.comparingDouble(EmployeeBean::getSalary))
-        ));
-    System.out.println(highestSalaryByDept);
-
 //    Problem 1: Department-wise Employee Count
 //    Problem 2: Average Salary by Department
 //    Problem 3: Department with Maximum Employees
@@ -43,6 +25,7 @@ public class EmployeeProblems {
 //    Problem 20: Map of Employees Grouped by Department and Sorted by Salary
 //
 //    reduce Method Exmaples:
+
 //    Problem 1: Sum of All Salaries
 //    Problem 2: Longest Employee Name
 //    Problem 3: Highest Salary

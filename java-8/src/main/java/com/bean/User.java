@@ -33,4 +33,12 @@ public class User {
     public void setPhoneNumbers(List<Integer> phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+            "userName='" + userName + '\'' +
+            ", phoneNumbers=" + phoneNumbers +
+            '}';
+    }
 }
