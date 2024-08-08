@@ -5,6 +5,7 @@ import static java.util.stream.Collectors.toList;
 
 import com.bean.City;
 import com.bean.EmployeeBean;
+import com.bean.Product;
 import com.bean.User;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,7 +21,7 @@ public class TestData {
     employeeBeanList.add(new EmployeeBean(10, "pavel", "it", 56776.67, "pavel@gmail.com"));
     employeeBeanList.add(new EmployeeBean(11, "mikalai", "it", 25879.67, "mikalai@gmail.com"));
     employeeBeanList.add(new EmployeeBean(12, "donald", "it", 85000.67, "donald@gmail.com"));
-    employeeBeanList.add(new EmployeeBean(13, "onac", "centrl", 25879.67, "onac@yahoo.com"));
+    employeeBeanList.add(new EmployeeBean(13, "onac", "central", 25879.67, "onac@yahoo.com"));
     employeeBeanList.add(new EmployeeBean(14, "ragav", "central", 72500.67, "ragav@yahoo.com"));
     employeeBeanList.add(new EmployeeBean(15, "maset", "non-it", 76700.67, "maset@yahoo.com"));
     employeeBeanList.add(new EmployeeBean(16, "hancy", "it", 55000, "hancy@gmail.com"));
@@ -137,5 +138,15 @@ public class TestData {
     cities.add(new City("Dubai", 43));
 
     return cities;
+  }
+
+  public static List<Product> getProducts() {
+    return Arrays.asList(
+        new Product("Milk", 37, 3.60, 12345600L),
+        new Product("Carton of Eggs", 50, 1.20, 12378300L),
+        new Product("Olive oil", 28, 37.0, 13412300L),
+        new Product("Peanut butter", 33, 4.19, 15121200L),
+        new Product("Bag of rice", 26, 1.70, 21401265L)
+    );
   }
 }

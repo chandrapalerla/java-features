@@ -1,11 +1,14 @@
 package com.stream.terminated;
 
 import com.bean.City;
+import com.bean.Product;
 import com.utility.TestData;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -88,7 +91,37 @@ public class CollectMain {
     System.out.println(":::::::Collectors partitioningBy downStream::::::::");
     Map<Boolean, Long> collectorsPartitionByDownStream = cities
         .stream()
-        .collect(Collectors.partitioningBy(city -> city.getTemperature() > 25,Collectors.counting()));
+        .collect(
+            Collectors.partitioningBy(city -> city.getTemperature() > 25, Collectors.counting()));
     System.out.println(collectorsPartitionByDownStream);
+
+    System.out.println(":::::::Collectors.summingInt()::::::::");
+
+    List<Product> products = TestData.getProducts();
+    Integer summingInt = products.stream()
+        .collect(Collectors.summingInt(Product::getQuantity));//mapToInt
+    System.out.println(summingInt);
+
+    System.out.println(":::::::Collectors.summingDouble()::::::::");
+
+    Double summingDouble = products.stream()
+        .collect(Collectors.summingDouble(Product::getPrice));//mapToDouble
+    System.out.println(summingDouble);
+
+    System.out.println(":::::::Collectors.summingLong()::::::::");
+
+    Long summingLong = products.stream()
+        .collect(Collectors.summingLong(Product::getProductNumber));//mapToLong
+    System.out.println(summingLong);
+
+    System.out.println(":::::::Collectors.maxBy()::::::::");
+    Optional<Product> maxBy = products.stream()
+        .collect(Collectors.maxBy(Comparator.comparing(Product::getPrice)));//max
+    System.out.println(maxBy.get());
+
+    System.out.println(":::::::Collectors.minBy()::::::::");
+    Optional<Product> minBy = products.stream()
+        .collect(Collectors.minBy(Comparator.comparing(Product::getPrice)));//min
+    System.out.println(minBy.get());
   }
 }
