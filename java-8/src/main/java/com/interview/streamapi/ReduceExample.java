@@ -1,9 +1,8 @@
 package com.interview.streamapi;
 
-
-
 import com.bean.EmployeeBean;
 import com.utility.TestData;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class ReduceExample {
                 .filter(employeeBean -> employeeBean.getDept().equalsIgnoreCase("it"))
                 .map(EmployeeBean::getSalary)
                 .reduce(0.0, Double::sum);
-        System.out.println(reduce);
+        System.out.println("reduce:::::" + reduce);
 
         Double doubleValue = employeeData.stream()
                 .filter(employeeBean -> employeeBean.getDept().equalsIgnoreCase("it"))
