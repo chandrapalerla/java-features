@@ -19,10 +19,10 @@ public class TestData {
     List<EmployeeBean> employeeBeanList = new ArrayList<>();
 
     employeeBeanList.add(new EmployeeBean(10, "pavel", "it", 56776.67, "pavel@gmail.com"));
-    employeeBeanList.add(new EmployeeBean(11, "mikalai", "it", 25879.67, "mikalai@gmail.com"));
+    employeeBeanList.add(new EmployeeBean(11, "mikalai", "admin", 25879.67, "mikalai@gmail.com"));
     employeeBeanList.add(new EmployeeBean(12, "donald", "it", 85000.67, "donald@gmail.com"));
     employeeBeanList.add(new EmployeeBean(13, "onac", "central", 25879.67, "onac@yahoo.com"));
-    employeeBeanList.add(new EmployeeBean(14, "ragav", "central", 72500.67, "ragav@yahoo.com"));
+    employeeBeanList.add(new EmployeeBean(14, "ragav", "central", 12500.67, "ragav@yahoo.com"));
     employeeBeanList.add(new EmployeeBean(15, "maset", "non-it", 76700.67, "maset@yahoo.com"));
     employeeBeanList.add(new EmployeeBean(16, "hancy", "it", 55000, "hancy@gmail.com"));
 
