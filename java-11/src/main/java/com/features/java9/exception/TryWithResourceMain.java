@@ -1,4 +1,4 @@
-package com.java9.features.exception;
+package com.features.java9.exception;
 
 import java.io.BufferedReader;
 import java.io.File;

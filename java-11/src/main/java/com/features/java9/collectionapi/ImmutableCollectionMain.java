@@ -1,4 +1,4 @@
-package com.java9.features.collectionapi;
+package com.features.java9.collectionapi;
 
 import java.util.Collections;
 import java.util.HashMap;

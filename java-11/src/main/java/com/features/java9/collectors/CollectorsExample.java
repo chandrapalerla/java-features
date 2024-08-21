@@ -1,4 +1,4 @@
-package com.java9.features.collectors;
+package com.features.java9.collectors;
 
 import com.bean.User;
 import com.utility.TestData;

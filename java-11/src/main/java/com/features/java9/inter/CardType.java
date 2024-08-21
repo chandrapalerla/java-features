@@ -1,4 +1,4 @@
-package com.java9.features.inter;
+package com.features.java9.inter;
 
 //Adding private methods in interface
 public interface CardType {

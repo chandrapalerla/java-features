@@ -1,4 +1,4 @@
-package com.java9.features.string;
+package com.features.java9.string;
 
 public class CodePointsExample {
     public static void main(String[] args) {

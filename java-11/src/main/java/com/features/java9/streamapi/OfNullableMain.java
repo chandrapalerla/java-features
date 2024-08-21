@@ -1,4 +1,4 @@
-package com.java9.features.streamapi;
+package com.features.java9.streamapi;
 
 import java.util.Optional;
 import java.util.stream.Stream;
