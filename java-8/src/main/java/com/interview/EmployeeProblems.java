@@ -90,8 +90,8 @@ public class EmployeeProblems {
         .sorted(Comparator.comparingDouble(EmployeeBean::getSalary))
         .collect(Collectors.groupingBy(EmployeeBean::getDept));
 
-    System.out.println("deptSortedSalary::::::::"+deptSortedSalary);
-//
+    System.out.println("deptSortedSalary::::::::" + deptSortedSalary);
+
 //    reduce Method Exmaples:
 //    Problem 1: Sum of All Salaries
 //    Problem 2: Longest Employee Name
