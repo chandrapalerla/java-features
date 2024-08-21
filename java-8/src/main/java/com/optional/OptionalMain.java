@@ -12,7 +12,7 @@ public class OptionalMain {
     System.out.println(optional1.get());
     System.out.println(optional1.isEmpty());
 
-    Optional<String> optional2 = Optional.ofNullable(input2);
+    Optional<String> optional2 = Optional.ofNullable(input1);
     if (optional2.isPresent()) {
       System.out.println(optional2.get());
     }
