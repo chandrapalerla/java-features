@@ -15,7 +15,7 @@
 
 8.completable feature
 
-9.metaspace(how the developed, why thy introduced)
+9.metaspace
 
 10.stream api(intermediate stream, terminated stream)
 
