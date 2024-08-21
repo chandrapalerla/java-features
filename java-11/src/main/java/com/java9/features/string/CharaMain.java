@@ -2,6 +2,7 @@ package com.java9.features.string;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.IntStream;
 
 public class CharaMain {
 
@@ -14,6 +15,11 @@ public class CharaMain {
         .filter(Character::isUpperCase)            // Filter only uppercase characters
         .toList();
 
-    System.out.println(characters);
+  System.out.println(characters);
+
+    String s = "chandrashekar";
+    s.chars()
+        .forEach(System.out::println);
+
   }
 }
