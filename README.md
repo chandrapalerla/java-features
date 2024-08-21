@@ -1,25 +1,25 @@
 # java 8 Features
 1.Functional Interface(customized consumer, predicate)
 
-2. default methods
+2.default methods
 
-3. static methods
+3.static methods
 
-4. Lambdas
+4.Lambdas
 
-5. Method references
+5.Method references
 
-6. optional
+6.optional
 
-7. Data and time
+7.Data and time
 
-8. completable feature
+8.completable feature
 
-9. Meta space
+9.metaspace
 
-10.stream API(intermediate stream, terminated stream)
+10.stream api(intermediate stream, terminated stream)
 
-11. collectors class methods
+11.collectors class methods
 
 12.comparator(adding default and static methods)
 
@@ -52,3 +52,4 @@
   codePoints
   
 8. Try-With-Resources Improvement
+
