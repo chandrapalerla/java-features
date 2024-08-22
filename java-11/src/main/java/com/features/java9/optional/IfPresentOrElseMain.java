@@ -8,7 +8,7 @@ public class IfPresentOrElseMain {
 
   public static void main(String[] args) {
 
-    Optional<List<String>> namesList = TestData.getNamesList();
+    Optional<List<String>> namesList = Optional.of(TestData.getNamesList());
     namesList.ifPresentOrElse(list -> {
           list.stream().filter(name -> name.length() > 5).forEach(System.out::println);
         },
