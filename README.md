@@ -53,3 +53,38 @@
   
 8. Try-With-Resources Improvement
 
+# Java 10 features:
+
+1. Local-Variable Type Inference
+
+   example:
+
+        var list = new ArrayList<String>(); // infers ArrayList<String>
+        var stream = list.stream();         // infers Stream<String>
+2.toUnmodifiableList
+  example:
+
+    List<String> strings = toUnmodifiableList
+    .stream()
+    .collect(Collectors.toUnmodifiableList());
+
+3.tounmodifiableSet
+
+    Set<String> unmodifiableSet = Stream.of("item1", "item2", "item3")
+    .collect(Collectors.toUnmodifiableSet());
+    unmodifiableSet.add("item4");
+
+4. toUnmodifiableMap
+
+   Map<Integer, String> unmodifiableMap = Stream.of("item1", "item2", "item3", "it")
+   .collect(Collectors.toUnmodifiableMap(
+   String::length, // Key mapper
+   s -> s, // Value mapper
+   (existing, replacement) -> existing + ", " + replacement // Merger function
+   ));
+
+5. orElseThrow
+
+   Optional<String> optional = Optional.ofNullable(getValue());
+   String value = optional.orElseThrow(() -> new IllegalArgumentException("Value must be present"));
+

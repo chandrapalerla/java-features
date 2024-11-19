@@ -1,12 +1,6 @@
 package com.collectors;
 
-import com.bean.User;
-import com.utility.TestData;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class CollectorsExample {
@@ -42,15 +36,15 @@ public class CollectorsExample {
 
     System.out.println(collect);
 
-    Map<String, List<Integer>> collect1 = TestData.getUserData().stream()
-        .collect(Collectors.groupingBy(
-            User::getUserName,
-            Collectors.flatMapping(
-                user -> user.getPhoneNumbers().stream(),
-                Collectors.toList()
-            )));
+//    Map<String, List<Integer>> collect1 = TestData.getUserData().stream()
+//        .collect(Collectors.groupingBy(
+//            User::getUserName,
+//            Collectors.flatMapping(
+//                user -> user.getPhoneNumbers().stream(),
+//                Collectors.toList()
+//            )));
 
-    System.out.println(collect1);
+//    System.out.println(collect1);
 
     Map<Integer, Set<String>> flattenedAndGrouped = nestedList.stream()
         .collect(Collectors.groupingBy(
