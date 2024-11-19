@@ -2,18 +2,23 @@
 
 API Enhancements and New Features:
 
-1.	HTTP Client (Standard) API:
+1. HTTP Client (Standard) API:
 
-2.	Local-Variable Syntax for Lambda Parameters:
+   The java.net.http package introduces a new HTTP Client API to replace the old HttpURLConnection API. 
+   This new API supports both synchronous and asynchronous programming models.
 
-3.	Nested Based Access Control:
+2. Local-Variable Syntax for Lambda Parameters:
 
-4.	Optional.isEmpty():
+   You can now use the var keyword to declare the types of the parameters in implicitly typed lambda expressions.
 
-5.	String Methods:
+3. Nested Based Access Control:
+
+4. Optional.isEmpty():
+
+5. String Methods:
       New methods in the String class: lines(), strip(), stripLeading(), stripTrailing(), repeat(int), and isBlank().
 
-6.	Files.readString() and Files.writeString():
+6. Files.readString() and Files.writeString():
 
 Memory Management and Performance Improvements:
 
