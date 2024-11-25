@@ -5,6 +5,12 @@
       <directory url="file://$PROJECT_DIR$/java-9/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/java-10/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/java-11/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-12/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-13/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-14/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-15/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-16/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-17/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -14,6 +20,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="java-9" />
         <module name="java-8" />
+        <module name="java-16" />
+        <module name="java-17" />
+        <module name="java-14" />
+        <module name="java-15" />
+        <module name="java-12" />
+        <module name="java-13" />
         <module name="java-10" />
         <module name="java-11" />
       </profile>
@@ -21,6 +33,12 @@
     <bytecodeTargetLevel>
       <module name="java-10" target="17" />
       <module name="java-11" target="17" />
+      <module name="java-12" target="17" />
+      <module name="java-13" target="17" />
+      <module name="java-14" target="17" />
+      <module name="java-15" target="17" />
+      <module name="java-16" target="17" />
+      <module name="java-17" target="17" />
       <module name="java-8" target="17" />
       <module name="java-9" target="17" />
     </bytecodeTargetLevel>
