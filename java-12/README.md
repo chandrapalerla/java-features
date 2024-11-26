@@ -42,3 +42,7 @@
     The new CompactNumberFormat class allows for formatting numbers in a compact form.
     NumberFormat shortFormat = NumberFormat.getCompactNumberInstance(Locale.FRENCH, NumberFormat.Style.SHORT);
     NumberFormat longFormat = NumberFormat.getCompactNumberInstance(Locale.FRENCH, NumberFormat.Style.LONG);
+
+10.Collectors.teeing()
+
+     method. It allows you to perform two different collections on the same set of data in a single pass, and then combine the results.
