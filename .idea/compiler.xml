@@ -30,17 +30,5 @@
         <module name="java-11" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-10" target="17" />
-      <module name="java-11" target="17" />
-      <module name="java-12" target="17" />
-      <module name="java-13" target="17" />
-      <module name="java-14" target="17" />
-      <module name="java-15" target="17" />
-      <module name="java-16" target="17" />
-      <module name="java-17" target="17" />
-      <module name="java-8" target="17" />
-      <module name="java-9" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

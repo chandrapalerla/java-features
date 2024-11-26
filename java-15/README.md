@@ -1,25 +1,22 @@
-# Java 10 Features
+# Java 15 Features
 
-1 Local-Variable Type Inference
+1. Sealed Classes (Preview)
+        
+        Sealed classes allow you to restrict which classes can extend or implement them. 
+        This provides more control over the inheritance hierarchy.
 
-2 Consolidate the JDK Forest into a Single Repository
+         Declaration: A class or interface is declared as sealed using the sealed keyword. Along with this, the permits clause specifies which classes are allowed to extend or implement the sealed class/interface.
+         Permitted Subclasses: The classes listed in the permits clause must be in the same module or package as the sealed class/interface.
+         Subclasses: The permitted subclasses must be one of the following:
+         final: No further subclassing is allowed.
+         sealed: The subclass can itself define a sealed hierarchy.
+         non-sealed: The subclass is open for extension by any other class.
+2. Records (Second Preview)
+3. Text Blocks (Standard)
+4. Hidden Classes
 
-3  Garbage-Collector Interface
-
-4  Parallel Full GC for G1
-
-5 Application Class-Data Sharing
-
-6 Thread-Local Handshakes
-
-7 Remove the Native-Header Generation Tool (javah)
-
-8 Additional Unicode Language-Tag Extensions
-
-9 Heap Allocation on Alternative Memory Devices
-
-10  Experimental Java-Based JIT Compiler
-
-11 Root Certificates
-
-12 Time-Based Release Versioning
+        Hidden classes are intended for use by frameworks that generate classes 
+       at runtime and are not intended to be used directly by the bytecode of other classes.
+5. Pattern Matching for instanceof (Second Preview)
+6. Edwards-Curve Digital Signature Algorithm (EdDSA)
+7. Foreign-Memory Access API (Second Incubator)

@@ -28,3 +28,12 @@
            Automatic Formatting: Maintain the visual structure of the text as written in the source code.
            Flexible Indentation: Allow indentation to be handled consistently with the surrounding code.
 3. Pattern Matching for instanceof (Preview)
+
+         Pattern matching for instanceof allows you to cast the target object in the same expression.
+4. JEP 358: Helpful NullPointerExceptions
+
+       Java 14 improves the detail provided in NullPointerException messages, making it easier to diagnose issues.
+5. JEP 343: Packaging Tool (Incubator)
+
+       The jpackage tool allows you to package Java applications into native installers.
+       jpackage --input input-dir --name myapp --main-jar myapp.jar --main-class com.example.Main
