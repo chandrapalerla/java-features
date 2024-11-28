@@ -1,25 +1,17 @@
-# Java 10 Features
+# Java 17 Features
 
-1 Local-Variable Type Inference
+1. Pattern Matching for switch (Preview)
 
-2 Consolidate the JDK Forest into a Single Repository
+2. Sealed Classes
 
-3  Garbage-Collector Interface
+3. Enhanced Pseudo-Random Number Generators
 
-4  Parallel Full GC for G1
+4. New macOS Rendering Pipeline
 
-5 Application Class-Data Sharing
+5. Deprecate the Applet API for Removal
 
-6 Thread-Local Handshakes
+6. New Foreign Function & Memory API (Incubator)
 
-7 Remove the Native-Header Generation Tool (javah)
+7. New Vector API (Second Incubator)
 
-8 Additional Unicode Language-Tag Extensions
-
-9 Heap Allocation on Alternative Memory Devices
-
-10  Experimental Java-Based JIT Compiler
-
-11 Root Certificates
-
-12 Time-Based Release Versioning
+8. Strongly Encapsulate JDK Internals

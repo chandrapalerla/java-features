@@ -1,25 +1,12 @@
-# Java 10 Features
+# Java 16 Features
 
-1 Local-Variable Type Inference
+1. Pattern Matching for instanceof (JEP 394)
 
-2 Consolidate the JDK Forest into a Single Repository
+2.  Records (JEP 395) 
 
-3  Garbage-Collector Interface
+3.  Local Variable var in Record Patterns (Preview - JEP 405)
 
-4  Parallel Full GC for G1
-
-5 Application Class-Data Sharing
-
-6 Thread-Local Handshakes
-
-7 Remove the Native-Header Generation Tool (javah)
-
-8 Additional Unicode Language-Tag Extensions
-
-9 Heap Allocation on Alternative Memory Devices
-
-10  Experimental Java-Based JIT Compiler
-
-11 Root Certificates
-
-12 Time-Based Release Versioning
+        Enhances the record pattern with local variable type inference (var).
+4. Sealed Classes (Second Preview - JEP 397)
+5. Foreign Function and Memory API (Incubator - JEP 412)
+6. Vector API (Incubator - JEP 338)
