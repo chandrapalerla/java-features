@@ -4,14 +4,14 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/java-8/pom.xml" />
-        <option value="$PROJECT_DIR$/java-11/pom.xml" />
-        <option value="$PROJECT_DIR$/java-9/pom.xml" />
-        <option value="$PROJECT_DIR$/java-10/pom.xml" />
-        <option value="$PROJECT_DIR$/java-12/pom.xml" />
-        <option value="$PROJECT_DIR$/java-13/pom.xml" />
-        <option value="$PROJECT_DIR$/java-14/pom.xml" />
         <option value="$PROJECT_DIR$/java-15/pom.xml" />
+        <option value="$PROJECT_DIR$/java-14/pom.xml" />
+        <option value="$PROJECT_DIR$/java-13/pom.xml" />
+        <option value="$PROJECT_DIR$/java-12/pom.xml" />
+        <option value="$PROJECT_DIR$/java-11/pom.xml" />
+        <option value="$PROJECT_DIR$/java-10/pom.xml" />
+        <option value="$PROJECT_DIR$/java-9/pom.xml" />
+        <option value="$PROJECT_DIR$/java-8/pom.xml" />
         <option value="$PROJECT_DIR$/java-16/pom.xml" />
         <option value="$PROJECT_DIR$/java-17/pom.xml" />
       </list>
