@@ -13,5 +13,13 @@ public class StringSortingExample {
 
         // Printing the sorted list
         sortedStrings.forEach(System.out::println);
+//Out Put
+//kiwi
+//pear
+//apple
+//grape
+//banana
+//orange
+
     }
 }

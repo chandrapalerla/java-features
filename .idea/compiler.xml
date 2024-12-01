@@ -11,6 +11,10 @@
       <directory url="file://$PROJECT_DIR$/java-15/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/java-16/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/java-17/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-18/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-19/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-20/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/java-21/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -20,14 +24,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="java-9" />
         <module name="java-8" />
-        <module name="java-16" />
-        <module name="java-17" />
         <module name="java-14" />
         <module name="java-15" />
         <module name="java-12" />
         <module name="java-13" />
         <module name="java-10" />
+        <module name="java-21" />
         <module name="java-11" />
+        <module name="java-20" />
+        <module name="java-18" />
+        <module name="java-19" />
+        <module name="java-16" />
+        <module name="java-17" />
       </profile>
     </annotationProcessing>
   </component>
