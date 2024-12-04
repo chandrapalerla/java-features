@@ -5,8 +5,8 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>java20</groupId>
-  <artifactId>java-20</artifactId>
+  <groupId>java22</groupId>
+  <artifactId>java-22</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
