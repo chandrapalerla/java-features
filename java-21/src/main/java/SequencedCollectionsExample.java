@@ -1,5 +1,7 @@
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.SequencedCollection;
 
 public class SequencedCollectionsExample {
     public static void main(String[] args) {
@@ -18,5 +20,12 @@ public class SequencedCollectionsExample {
         
         List<String> reversedList = list.reversed();
         System.out.println("Reversed list: " + reversedList); // Output: [three, two, one]
+
+        SequencedCollection<Integer> seqCollection = new LinkedList<>();
+        seqCollection.addFirst(1);
+        seqCollection.addLast(2);
+        System.out.println(seqCollection);  // Output: [1, 2]
+        seqCollection.removeFirst();
+        System.out.println(seqCollection);  // Output: [2]
     }
 }
