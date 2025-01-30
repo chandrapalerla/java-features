@@ -40,6 +40,7 @@
         <module name="java-19" />
         <module name="java-16" />
         <module name="java-17" />
+        <module name="design-patterns" />
       </profile>
     </annotationProcessing>
   </component>
