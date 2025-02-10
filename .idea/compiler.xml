@@ -31,6 +31,7 @@
         <module name="java-12" />
         <module name="java-23" />
         <module name="java-13" />
+        <module name="dataStuctures-logicalProblems" />
         <module name="java-10" />
         <module name="java-21" />
         <module name="java-11" />
@@ -40,8 +41,12 @@
         <module name="java-19" />
         <module name="java-16" />
         <module name="java-17" />
+        <module name="logical-problems" />
         <module name="design-patterns" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dataStuctures" target="23" />
+    </bytecodeTargetLevel>
   </component>
 </project>

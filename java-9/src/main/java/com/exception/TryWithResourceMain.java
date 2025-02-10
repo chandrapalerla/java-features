@@ -9,7 +9,7 @@ public class TryWithResourceMain {
 
   public static void main(String[] args) throws IOException {
     File file = new File(
-        "D:\\Git_Source\\java-features\\java-9\\java-11\\src\\main\\resources\\sample.txt");
+        "C:\\Git-hub\\java-features\\java-9\\src\\main\\resources\\sample.txt");
 
     BufferedReader br = new BufferedReader(new FileReader(file));
 

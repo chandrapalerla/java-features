@@ -21,6 +21,11 @@
         <option value="$PROJECT_DIR$/java-22/pom.xml" />
         <option value="$PROJECT_DIR$/java-23/pom.xml" />
         <option value="$PROJECT_DIR$/../design-patterns/pom.xml" />
+        <option value="$PROJECT_DIR$/../DataStructures/pom.xml" />
+        <option value="$PROJECT_DIR$/../dataStuctures-logicalProblems/pom.xml" />
+        <option value="$PROJECT_DIR$/../dataStuctures/pom.xml" />
+        <option value="$PROJECT_DIR$/../logical-problems/src/main/java/com/pom.xml" />
+        <option value="$PROJECT_DIR$/../logical-problems/src/main/java/logical-problems/pom.xml" />
       </list>
     </option>
   </component>
