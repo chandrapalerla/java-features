@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/../dataStuctures" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../design-patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../logical-problems" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git-workspace/AI/New/task2.3.2-java-defect-identification-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git-workspace/AI/New/task3.1.1-java-unit-tests-generation-template" vcs="Git" />
   </component>
 </project>

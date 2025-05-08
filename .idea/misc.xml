@@ -26,8 +26,11 @@
         <option value="$PROJECT_DIR$/../dataStuctures/pom.xml" />
         <option value="$PROJECT_DIR$/../logical-problems/src/main/java/com/pom.xml" />
         <option value="$PROJECT_DIR$/../logical-problems/src/main/java/logical-problems/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Git-workspace/AI/New/task2.3.2-java-defect-identification-template/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Git-workspace/AI/New/task3.1.1-java-unit-tests-generation-template/pom.xml" />
+        <option value="$PROJECT_DIR$/java-24/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="23" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="24" project-jdk-type="JavaSDK" />
 </project>

@@ -32,16 +32,19 @@
         <module name="java-23" />
         <module name="java-13" />
         <module name="dataStuctures-logicalProblems" />
+        <module name="java-24" />
         <module name="java-10" />
         <module name="java-21" />
         <module name="java-11" />
         <module name="java-22" />
+        <module name="module2_task3.2" />
         <module name="java-20" />
         <module name="java-18" />
         <module name="java-19" />
         <module name="java-16" />
         <module name="java-17" />
         <module name="logical-problems" />
+        <module name="unit-test-generation" />
         <module name="design-patterns" />
       </profile>
     </annotationProcessing>

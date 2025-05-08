@@ -1,6 +1,7 @@
 package com.inter;
 
 @FunctionalInterface
-public interface Bank{
+interface BankSBI extends Bank{
    String validateAccountNumber(String number);
+  
 }
