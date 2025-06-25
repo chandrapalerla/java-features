@@ -9,7 +9,7 @@ public class StringMethods {
         System.out.println(str.strip()); // "Hello World!"
         //stripLeading: Remove the spaces left side
         System.out.println(str.stripLeading()); // "Hello World!   "
-        //stripTrailing: Remove the spces right side
+        //stripTrailing: Remove the spaces right side
         System.out.println(str.stripTrailing()); // "   Hello World!"
         //repeat: Repeat the word particular time
         System.out.println("Hello".repeat(3)); // "HelloHelloHello"
