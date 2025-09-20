@@ -9,6 +9,8 @@
     <packaging>pom</packaging>
     <name>Java Features Parent</name>
     <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
@@ -29,6 +31,6 @@
         <module>java-22</module>
         <module>java-23</module>
         <module>java-24</module>
+        <module>java-25</module>
     </modules>
 </project>
-
