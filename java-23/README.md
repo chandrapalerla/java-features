@@ -1,4 +1,4 @@
-# Java 23 Features
+# Java 17 Features
 
 1. Primitive Types in Patterns, instanceof, and switch (Preview)
 
