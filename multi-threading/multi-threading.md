@@ -134,37 +134,87 @@ When to use?
 		Volatile: Write → Happens before → Read
 		Thread Join Rule: t.join(); // ensures thread completed
 		Thread Start Rule
-
-
 ## 5. Advanced Concurrency Issues
-- Deadlock
-- Livelock
-- Starvation
-- Thread contention
-- Lock ordering
-- Double-checked locking
+- Deadlock : A deadlock happens when two or more threads are waiting forever for each other’s locks.
+			Fix: Use consistent lock ordering
+		   // Always lock lock1 first, then lock2
+		    Use tryLock() (ReentrantLock)
+		    Avoid nested locks
+		    Use timeout
 
+- Livelock : Threads are not blocked, but keep responding to each other and never complete work.
+				Fix:
+				Add randomness (backoff strategy)
+				Avoid over-coordination
+				Use timeout
+- Starvation : A thread never gets CPU/resources because other threads keep taking them.
+				Problem: Low priority thread may never execute
+- Thread contention : Multiple threads trying to access the same resource/lock, causing slowdown.
+	Problem: All threads wait for the same lock → performance issue
+	Fix: Reduce synchronized scope
+		 Use AtomicInteger
+- Lock ordering : A strategy to prevent deadlocks by always acquiring locks in the same order.
+				Rule: lock1 → lock2 → lock3
+- Double-checked locking : Used to create Singleton efficiently (lazy initialization with minimal locking)
+		Problem (without volatile):
+			Instruction reordering
+			Partially constructed object
 
 ## 6. Locks Framework (java.util.concurrent.locks)
-- Lock interface
-- ReentrantLock
-  - Fair vs Non-fair
-  - tryLock(), lockInterruptibly()
-- ReadWriteLock
+- Lock interface : Lock is a more flexible alternative to synchronized.
+		Key Features:
+			Explicit lock/unlock
+			Try to acquire lock without blocking
+			Interruptible locking
+			Multiple conditions
+- ReentrantLock : A lock that allows the same thread to acquire it multiple times.
+- Fair vs Non-fair
+  Non-Fair (default)                                                            
+		Faster
+		Threads may jump queue
+		ReentrantLock lock = new ReentrantLock(); // non-fair
+  Fair Lock
+		First-come-first-serve (FIFO)
+		Prevents starvation
+		Slightly slower
+		ReentrantLock lock = new ReentrantLock(true); // fair
+		Use fair lock only when starvation matters more than performance
+- tryLock(): Attempts to acquire lock without waiting, lockInterruptibly(): Allows thread to be interrupted while waiting
+- ReadWriteLock : Separates locks into:Read Lock (multiple threads allowed),Write Lock (exclusive)
   - ReentrantReadWriteLock
-- StampedLock
-- Condition interface
-
+   High performance for read-heavy systems
+   Multiple readers at same time
+   Limitation: Write lock blocks all readers
+- StampedLock(java 8+): Advanced lock with:
+		Optimistic read
+		Read lock
+		Write lock
+		Very fast for read-heavy workloads
+		Reduces contention
+- Condition interface : Similar to wait() / notify(), but more flexible.
+						Multiple conditions per lock
+						Better control
+						Cleaner API
 
 ## 7. Atomic Classes (Lock-Free Programming)
-- AtomicInteger
-- AtomicLong
-- AtomicBoolean
-- AtomicReference
-- AtomicStampedReference
+- AtomicInteger : A thread-safe integer that supports atomic operations without locks.
+			Why use it: No synchronized, Better performance under contention, Uses CAS internally
+- AtomicLong: same as AtomicInteger
+- AtomicBoolean : hread-safe boolean value
+- AtomicReference : Allows atomic updates on object references. Use cases: Updating shared objects safely, Lock-free data structures
+- AtomicStampedReference : Adds a version (stamp) to reference → solves ABA problem
 - Compare-And-Swap (CAS)
-- ABA problem
-
+		Example: if (current == expected) {
+					current = newValue;
+				}
+- ABA problem:
+		A tricky issue in CAS:
+		Value = A
+		Thread1 reads A
+		Thread2 changes A → B → A
+		Thread1 sees A (thinks nothing changed) 
+		But actually it changed!
+Solution: AtomicStampedReference
 ## 8. Executor Framework
 - Executor
 - ExecutorService
