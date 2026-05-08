@@ -233,8 +233,6 @@ Solution: AtomicStampedReference
 - RejectedExecutionHandler
 - ThreadFactory
 
----
-
 ## 9. Callable, Future & CompletableFuture
 - Runnable vs Callable
 - Future
@@ -243,8 +241,6 @@ Solution: AtomicStampedReference
 - CompletableFuture (Java 8+)
   - async chaining
   - combining results
-
----
 
 ## 10. Concurrent Collections (java.util.concurrent)
 
@@ -260,7 +256,6 @@ Solution: AtomicStampedReference
 - ConcurrentLinkedQueue
 - ConcurrentLinkedDeque
 
----
 
 ## 11. Blocking Queues
 - BlockingQueue interface
