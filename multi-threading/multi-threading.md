@@ -216,15 +216,45 @@ When to use?
 		But actually it changed!
 Solution: AtomicStampedReference
 ## 8. Executor Framework
-- Executor
-- ExecutorService
+- Executor:  Executor is the top-level interface for launching tasks asynchronously.
+			new Thread(task).start(); instead of executor.execute(task);
+- ExecutorService : ExecutorService extends Executor.
+				Submit tasks
+				Shutdown pool
+				Future result
+				Multiple thread management
 - ScheduledExecutorService
+			Used for:
+				Delayed tasks
+				Periodic tasks
+				Better replacement for old Timer.
+			Methods:
+				schedule()
+				scheduleAtFixedRate()
+				scheduleWithFixedDelay()
+	FixedRate :Runs at exact interval.If task takes 1 sec and interval 2 sec
+	FixedDelay: Next run starts after previous completes + delay.
+	
 - ThreadPoolExecutor
-- Executors utility class
+	Actual implementation of thread pool.
+	Most powerful and customizable executor.
+	Used internally by Executors
+	ThreadPoolExecutor( corePoolSize, maxPoolSize, keepAliveTime, unit, workQueue)
+	
+- Executors utility class : Factory class to create thread pools easily.
   - newFixedThreadPool
+		Creates fixed number of threads.
+		Example:
+				If 2 threads:
+				Only 2 tasks run simultaneously
+				Others wait in queue
   - newCachedThreadPool
-  - newSingleThreadExecutor
-  - newScheduledThreadPool
+			Creates threads as needed.
+			No fixed size
+			Reuses idle threads
+			Good for many short tasks
+  - newSingleThreadExecutor: Only one worker thread.
+  - newScheduledThreadPool: Used for delayed / repeated jobs.
 
 ### Thread Pool Concepts
 - Core pool size
