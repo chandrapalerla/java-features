@@ -276,11 +276,40 @@ Solution: AtomicStampedReference
 
 ### Maps
 - ConcurrentHashMap
-- ConcurrentSkipListMap
+		Java 7:
+
+		Segment locking
+		16 segments
+		lock one segment only
+		
+		Java 8+:
+		Uses:
+		✅ CAS (Compare and Swap)
+		✅ synchronized on bucket
+		✅ Node array
+		✅ Tree bins
+
+		Fine-grained locking.
 
 ### Lists
-- CopyOnWriteArrayList
-- CopyOnWriteArraySet
+- CopyOnWriteArrayList:
+		Immutable snapshots
+		Volatile reference swap
+		ReentrantLock for writes
+		Lock-free reads
+		Snapshot iterator
+		
+		Lock the list
+		Create a new copy of internal array
+		Modify copied array
+		Replace old array reference with new array
+		Unlock
+		So readers always see stable immutable snapshots.
+- CopyOnWriteArraySet: internal Data structure is CopyOnWriteArrayList
+				Check duplicate
+				Copy full array
+				Add if absent
+				Replace reference
 
 ### Queues
 - ConcurrentLinkedQueue
