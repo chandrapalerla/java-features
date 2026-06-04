@@ -8,7 +8,7 @@ import java.util.stream.DoubleStream;
 public class SumOfDoubleArray {
     private static final int MAX_SIZE = 500_000_000;
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         double[] result = new double[1];
         SumOfDoubleArrayForkJoin forkJoinSumOfSquares = new SumOfDoubleArrayForkJoin(getDoubleArray(), 0, MAX_SIZE, result);
         ForkJoinPool pool = new ForkJoinPool();
