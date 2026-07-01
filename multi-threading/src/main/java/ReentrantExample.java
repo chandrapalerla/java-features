@@ -6,6 +6,8 @@ class ReentrantExample {
 
     public void outer() throws InterruptedException {
         lock.lock();
+        lock.newCondition();
+        System.out.println(lock.isLocked());
         try {
             inner();
         } finally {

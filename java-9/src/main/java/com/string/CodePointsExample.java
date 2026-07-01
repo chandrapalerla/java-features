@@ -1,5 +1,9 @@
 package com.string;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class CodePointsExample {
     public static void main(String[] args) {
         String text = "Hello, 🌍!"; // String with a Unicode emoji
@@ -17,6 +21,9 @@ public class CodePointsExample {
                      StringBuilder::appendCodePoint, 
                      StringBuilder::append)
             .toString();
+
+        String list = text.chars().filter(Character::isAlphabetic).mapToObj(c -> String.valueOf((char) c)).collect(Collectors.joining());
+        System.out.println(list);
 
         System.out.println("Alphabetic characters only: " + alphabeticOnly);
 
